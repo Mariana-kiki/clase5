@@ -1,23 +1,30 @@
-#include<stdio.h>
+/*Gutiérrez Acosta Mariana
+  clase 5 ejejrcicio 7*/
+
+#include <stdio.h>
 int main ()
 {
-     int a = 5, b = 10, c[10] = {5, 4, 3, 2, 1, 9, 8, 7, 6, 0};
-     int *apEnt;
-     apEnt = &a;
-     printf("a = 5, b = 10, c[10] = {5, 4, 3, 2, 1, 9, 8, 7, 6, 0}\n");
-     printf("apEnt = &a\n");
-     /*A la variable b se le asigna el contenido de la variable a la que apunta apEnt*/
-     b = *apEnt;
-     printf("b = *apEnt \t-> b = %i\n", b);
-     /*A la variable b se le asigna el contenido de la variable a la que apunta apEnt y se le suma uno*/
-    b = *apEnt +1;
-     printf("b = *apEnt + 1 \t-> b = %i\n", b);
-     //La variable a la que apunta apEnt se le asigna el valor cero
-     *apEnt = 0;
-     printf("*apEnt = 0  \t-> a = %i\n", a);
-    /*A apEnt se le asigna la dirección de memoria que tiene el elemento 0 del arreglo c*/
-  
-     apEnt = &c[0];
-     printf("apEnt = &c[0] \t-> apEnt = %i\n", *apEnt);
-   return 0;
+      int arr[] = {5, 4, 3, 2, 1};
+      int *apArr;//Se declara el apuntador apArr
+      int x;
+      apArr = arr;
+      printf("int arr[] = {5, 4, 3, 2, 1};\n");
+      printf("apArr = &arr[0]\n");
+      x = *apArr; /*A la variable x se le asigna el contenido del arreglo arr en su
+      elemento 0*/
+      printf("x = *apArr \t -> x = %d\n", x);
+      x = *(apArr+1); /*A la variable x se le asigna el contenido del arreglo arr
+      en su elemento 1*/
+     printf("x = *(apArr+1) \t -> x = %d\n", x);
+      x = *(apArr+2); /*A la variable x se le asigna el contenido del arreglo arr
+      en su elemento 2*/
+      printf("x = *(apArr+2) \t -> x = %d\n", x);
+      x = *(apArr+3); /*A la variable x se le asigna el contenido del arreglo arr
+      en su elemento 3*/
+      printf("x = *(apArr+3) \t -> x = %d\n", x);
+      x = *(apArr+4); /*A la variable x se le asigna el contenido del arreglo arr
+      en su elemento 4*/
+      printf("x = *(apArr+2) \t -> x = %d\n", x);
+      return 0;
 }
+
