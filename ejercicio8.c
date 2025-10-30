@@ -1,3 +1,6 @@
+/*Gutiérrez Acosta Mariana
+  clase 5 ejercicio 8*/
+
 #include <stdio.h>
 int main ()
 {
@@ -8,7 +11,7 @@ int main ()
   //Se accede a cada elemento del arreglo haciendo uso del ciclo for
   for (indice = 0 ; indice < 5 ; indice++)
   {
-  printf("\nCalificación del alumno %d es %d", indice+1, (ap+indice));
+    printf("\nCalificación del alumno %d es %d", indice+1, (ap+indice));
   }
   printf("\n");
   return 0;
