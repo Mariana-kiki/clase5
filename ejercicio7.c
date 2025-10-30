@@ -1,5 +1,5 @@
 /*Gutiérrez Acosta Mariana
-  clase 5 ejejrcicio 7*/
+  clase 5 ejercicio 7*/
 
 #include <stdio.h>
 int main ()
