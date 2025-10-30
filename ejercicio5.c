@@ -4,27 +4,11 @@ clase 5 ejercicio 5*/
 #include <stdio.h>
 int main ()
 {
-   int lista[10]; // Se declara el arreglo unidimensional
-   int indice=0;
-   int numeroElementos=0;
-   printf("\nDa un número entre 1 y 10 para indicar la cantidad de elementos que tiene el arreglo\n");
-   scanf("%d",&numeroElementos);
-   if((numeroElementos>=1) && (numeroElementos<=10))
-   {
-     // Se almacena un número en cada elemento del arreglo unidimensional usando for
-     for (indice = 0 ; indice <= numeroElementos-1 ; indice++)
-     {
-       printf("\nDar un número entero para el elemento %d del arreglo ", indice );
-       scanf("%d",&lista[indice]);
-     }
-     printf("\nLos valores dados son: \n");
-     // Se muestra el número almacenado en cada elemento del arreglo unidimensional usando for
-     for (indice = 0 ; indice <= numeroElementos-1 ; indice++)
-     {
-       printf("%d ", lista[indice] );
-     }
-   }
-   else printf("el valor dado no es válido");
-   printf("\n");
-   return 0;
+    char *ap, c = 'a'; // Se declara el apuntador ap de tipo alfanumérico
+    ap = &c; //Se le asigna al apuntador la dirección de memoria de la variable c
+    printf("Carácter: %c\n",*ap); /* Se imprime el contenido de la variable a la  que apunta el apuntador ap */
+    printf("Código ASCII: %d\n",*ap); /*Se imprime el código ASCII del carácter ‘a’ */
+    printf("Dirección de memoria: %d\n",ap);/*Se imprime la dirección de memoria que almacena el apuntador*/
+    return 0;
 }
+
