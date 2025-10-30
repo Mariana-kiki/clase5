@@ -12,7 +12,7 @@ int main ()
    scanf("%d",&numeroElementos);
    if((numeroElementos>=1) && (numeroElementos<=10))
    {
-    // Se almacena un número en cada elemento del arreglo unidimensional usando for
+     // Se almacena un número en cada elemento del arreglo unidimensional usando for
      for (indice = 0 ; indice <= numeroElementos-1 ; indice)
       {
        printf("\nDar un número entero para el elemento %d del arreglo ", indice );
