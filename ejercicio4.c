@@ -1,3 +1,6 @@
+/*Gutiérrez Acosta Mariana
+clase 5 ejercicio 4*/
+
 #include <stdio.h>
 int main ()
 {
